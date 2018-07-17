@@ -1,0 +1,40 @@
+﻿<Window x:Class="NeteaseCloudMusicTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeteaseCloudMusicTool"
+        mc:Ignorable="d"
+        Title="网易云音乐Api分析" Height="340" Width="550" ResizeMode="CanMinimize" HorizontalContentAlignment="Stretch" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="auto" Margin="15,15,0,0" TextWrapping="Wrap" Text="歌曲ID：" VerticalAlignment="Top" Width="auto" FontSize="18"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="auto" Margin="93,15,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="428" FontSize="18"/>
+        <Button x:Name="btnGetInfo" Content=" 获取歌曲信息 " HorizontalAlignment="Left" Height="auto" Margin="200,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnGetInfo_Click"/>
+        <Button x:Name="btnPlay" Content=" 播放 " HorizontalAlignment="Left" Height="auto" Margin="327,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnPlay_Click" IsEnabled="False" />
+        <Button x:Name="btnDownload" Content=" 下载歌曲 " HorizontalAlignment="Left" Height="auto" Margin="381,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnDownload_Click" IsEnabled="False" />
+        <Button x:Name="btnAbout" Content=" 关于 " HorizontalAlignment="Left" Height="auto" Margin="472,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" IsEnabled="True" Click="btnAbout_Click" />
+        <GroupBox Header="歌曲信息" HorizontalAlignment="Left" Margin="15,85,0,15" Width="506" FontSize="14">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,10,0,0" TextWrapping="Wrap" Text="歌曲名：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBlock x:Name="txbName" HorizontalAlignment="Left" Height="18" Margin="85,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,33,0,0" TextWrapping="Wrap" Text="比特率：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBlock x:Name="txbBitRate" HorizontalAlignment="Left" Height="18" Margin="85,33,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,56,0,0" TextWrapping="Wrap" Text="歌手：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBlock x:Name="txbArtist" HorizontalAlignment="Left" Height="18" Margin="85,56,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,79,0,0" TextWrapping="Wrap" Text="专辑：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBlock x:Name="txbAlbum" HorizontalAlignment="Left" Height="18" Margin="85,79,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,102,0,0" TextWrapping="Wrap" Text="持续时间：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBlock x:Name="txbDuration" HorizontalAlignment="Left" Height="18" Margin="85,102,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,125,0,0" TextWrapping="Wrap" Text="歌曲链接：" VerticalAlignment="Top" Width="auto" FontSize="14"/>
+                <TextBox x:Name="txbUrl" Margin="85,125,10,0" TextWrapping="NoWrap" FontSize="14" Height="18" VerticalAlignment="Top" IsReadOnly="True"/>
+                <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Margin="10,153,0,0" Width="400" Height="18" VerticalAlignment="Top" Visibility="Hidden" />
+                <TextBlock x:Name="txbProgress" HorizontalAlignment="Left" Margin="420,153,0,0" TextWrapping="NoWrap" Width="auto" Height="18" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

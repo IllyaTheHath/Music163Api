@@ -1,0 +1,21 @@
+﻿<Window x:Class="NeteaseCloudMusicTool.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeteaseCloudMusicTool"
+        mc:Ignorable="d"
+        Title="关于" Height="258.824" Width="361.765" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="txbDis" Height="auto" Margin="15,15,15,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" Text="    本作品仅供学习交流使用，只用于验证加密以及API操作的可行性，请勿用于其他用途"/>
+        <TextBlock Height="auto" Margin="15,60,15,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" Text="    参考资料:" />
+        <TextBlock x:Name="txbHelpGit" Height="auto" Margin="15,83,15,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" Text="    API部分参考了Github项目MusicBox中对网易云音乐API的分析:"/>
+        <TextBlock Height="auto" Margin="15,119,15.2,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" >
+            <Hyperlink x:Name="hylGit" NavigateUri="https://github.com/darknessomi/musicbox" RequestNavigate="hylGit_RequestNavigate">https://github.com/darknessomi/musicbox</Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="txbHelpZhi" Height="auto" Margin="14,142,15.2,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" Text="    加密部分参考了知乎问题&quot;如何爬网易云音乐的评论数&quot;中的分析:"/>
+        <TextBlock Height="auto" Margin="14,178,16.2,0" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" >
+            <Hyperlink x:Name="hylZhi" NavigateUri="https://www.zhihu.com/question/36081767" RequestNavigate="hylZhi_RequestNavigate">https://www.zhihu.com/question/36081767</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>
