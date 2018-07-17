@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="网易云音乐Api分析" Height="340" Width="550" ResizeMode="CanMinimize" HorizontalContentAlignment="Stretch" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="auto" Margin="15,15,0,0" TextWrapping="Wrap" Text="歌曲ID：" VerticalAlignment="Top" Width="auto" FontSize="18"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="auto" Margin="93,15,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="428" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="auto" Margin="15,15,0,0" TextWrapping="Wrap" Text="歌曲ID或链接：" VerticalAlignment="Top" Width="auto" FontSize="18"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="auto" Margin="147,15,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="374" FontSize="18"/>
         <Button x:Name="btnGetInfo" Content=" 获取歌曲信息 " HorizontalAlignment="Left" Height="auto" Margin="200,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnGetInfo_Click"/>
         <Button x:Name="btnPlay" Content=" 播放 " HorizontalAlignment="Left" Height="auto" Margin="327,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnPlay_Click" IsEnabled="False" />
         <Button x:Name="btnDownload" Content=" 下载歌曲 " HorizontalAlignment="Left" Height="auto" Margin="381,46,0,0" VerticalAlignment="Top" Width="auto" FontSize="18" Click="btnDownload_Click" IsEnabled="False" />
